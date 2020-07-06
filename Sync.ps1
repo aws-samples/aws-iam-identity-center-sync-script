@@ -255,7 +255,7 @@ function Initialization {
     }
 
     end {
-        Write-Host "AWS Single Sign-On Integration - Sync Started" -ForegroundColor Green
+        Write-Host "AWS Single Sign-On Integration - Sync Completed" -ForegroundColor Green
     }
 
 }
