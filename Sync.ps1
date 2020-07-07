@@ -223,7 +223,7 @@ function Initialization {
 
     begin {
         Clear-Host
-        Write-Host "AWS SSO Integration - Sync`n"
+        Write-Host "AWS Single Sign-On Integration - Sync`n"
 
         $tenantId = Read-Host -Prompt "Tenant Id"
         if ([string]::IsNullOrEmpty($tenantId)) { Write-Error -Message "Tenant Id cannot be blank." -ErrorAction Stop }
