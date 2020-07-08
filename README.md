@@ -1,15 +1,13 @@
 ## AWS-SSO-SYNC
-On Demand SCIM provisioning of Azure AD to AWS SSO with PowerShell
 
 ## Overview
-
-// TODO: Need to fill in
+On Demand SCIM provisioning of Azure AD to AWS SSO with PowerShell
 
 ## Getting Started
 
 ### Prerequisites
 
-Configure **AWS SSO** per the steps outlined in this [article](https://aws.amazon.com/blogs/aws/the-next-evolution-in-aws-single-sign-on/)
+Configure **AWS Single Sign-On** per the steps outlined in this [article](https://aws.amazon.com/blogs/aws/the-next-evolution-in-aws-single-sign-on/)
 
 ### App Registration
 
@@ -66,7 +64,7 @@ Configure **AWS SSO** per the steps outlined in this [article](https://aws.amazo
 - Choose _Users and groups_ blade
 - Select _Add user_
 - Select _Users_
-- Choose service account create in previous task
+- Choose service account created in previous task
 - Select _Assign_
 
 ### Inputs
