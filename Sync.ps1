@@ -1,3 +1,4 @@
+#Requires -Version 7.0
 #region Get
 function Get-GraphSynchronizationJobId() {
 
@@ -223,7 +224,7 @@ function Initialization {
 
     begin {
         Clear-Host
-        Write-Host "AWS Single Sign-On Integration - Sync`n"
+        Write-Host "AWS Single Sign-On Integration - Sync`n" -ForegroundColor Yellow
 
         $tenantId = Read-Host -Prompt "Tenant Id"
         if ([string]::IsNullOrEmpty($tenantId)) { Write-Error -Message "Tenant Id cannot be blank." -ErrorAction Stop }
