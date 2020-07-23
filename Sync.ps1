@@ -229,7 +229,7 @@ function Initialization {
         $tenantId = Read-Host -Prompt "Tenant Id"
         if ([string]::IsNullOrEmpty($tenantId)) { Write-Error -Message "Tenant Id cannot be blank." -ErrorAction Stop }
 
-        $displayName = Read-Host -Prompt "App Name"
+        $displayName = Read-Host -Prompt "Display Name"
         if ([string]::IsNullOrEmpty($displayName)) { Write-Error -Message "Display Nane cannot be blank." -ErrorAction Stop }
 
         $applicationId = Read-Host -Prompt "App Id"
