@@ -71,10 +71,10 @@ Configure **AWS Single Sign-On** per the steps outlined in this [article](https:
 
 Gather the following properties for input into the PowerShell script
 
-- Navigate to Azure Active Directory
-- Choose _App Registrations_ blade
-- Choose the app created in the previous task
-- Copy the following values:
+* Navigate to Azure Active Directory
+* Choose _App Registrations_ blade
+* Choose the app created in the previous task
+* Copy the following values:
   - Tenant Id
   - Application Name
   - Application Id
@@ -82,7 +82,7 @@ Gather the following properties for input into the PowerShell script
   - Username
   - Password
 
-  #### Note: When copying and pasting in Windows, choose the PowerShell icon, then Edit > Paste.
+> Note: When copying and pasting in Windows, choose the PowerShell icon, then Edit > Paste.
 
 
 
