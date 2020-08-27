@@ -52,7 +52,7 @@ Configure **AWS Single Sign-On** per the steps outlined in this [article](https:
 - Navigate to new user
 - Choose _Assigned roles_
 - Choose _Add assignments_
-- Scroll down and Choose _Global administrator_
+- Scroll down and Choose _Hybrid identity administrator_
 
 
 
