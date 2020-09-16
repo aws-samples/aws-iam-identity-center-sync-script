@@ -7,7 +7,7 @@ On Demand SCIM provisioning of Azure AD to AWS SSO with PowerShell
 
 ### Prerequisites
 
-Configure **AWS Single Sign-On** per the steps outlined in this [article](https://aws.amazon.com/blogs/aws/the-next-evolution-in-aws-single-sign-on/)
+Configure **AWS Single Sign-On** with the steps outlined in this [article](https://aws.amazon.com/blogs/aws/the-next-evolution-in-aws-single-sign-on/)
 
 ### App Registration
 
