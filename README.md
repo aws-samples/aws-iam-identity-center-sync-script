@@ -85,9 +85,6 @@ Gather the following properties for input into the PowerShell script
 > Note: When copying and pasting in Windows, choose the PowerShell icon, then Edit > Paste.
 
 
-
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
-
 ## License
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
