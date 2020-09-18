@@ -86,8 +86,6 @@ Gather the following properties for input into the PowerShell script
 
 
 
-## Security
-
 See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
 
 ## License
