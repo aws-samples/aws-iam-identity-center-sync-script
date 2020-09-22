@@ -2,6 +2,7 @@
 
 ## Overview
 On Demand SCIM provisioning of Azure AD to AWS SSO with PowerShell
+This repo is based on the steps outlined in this [article](https://aws.amazon.com/blogs/security/on-demand-scim-provisioning-of-azure-ad-to-aws-sso-with-powershell/) 
 
 ## Getting Started
 
