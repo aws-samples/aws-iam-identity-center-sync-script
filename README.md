@@ -54,8 +54,8 @@ Configure **AWS Single Sign-On** with the steps outlined in this [article](https
 - Choose _Assigned roles_
 - Choose _Add assignments_
 - Scroll down and Choose _Hybrid identity administrator_
-
-
+- Under _Settings_ choose _Active_
+- Choose _Assign_
 
 ### Enterprise Application
 
