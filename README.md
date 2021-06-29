@@ -2,7 +2,7 @@
 
 ## Overview
 On Demand SCIM provisioning of Azure AD to AWS SSO with PowerShell
- - This repo is based on the steps outlined in this [article](https://aws.amazon.com/blogs/security/on-demand-scim-provisioning-of-azure-ad-to-aws-sso-with-powershell/) updated Jan 2021.
+ - This repo is based on the steps outlined in this [article](https://aws.amazon.com/blogs/security/on-demand-scim-provisioning-of-azure-ad-to-aws-sso-with-powershell/) updated June 2021.
 
 ## Getting Started
 
@@ -33,29 +33,11 @@ Configure **AWS Single Sign-On** with the steps outlined in this [article](https
 - Open the _API Permissions_ blade
 - Choose _Add a permission_
 - Choose _Microsoft Graph_
-- Choose _Delegated permissions_
-- Scroll down to _Directory_ and expand
-- Choose _Directory.ReadWrite.All_
+- Choose _Application permissions_
+- Scroll down to _Application_ and expand
+- Choose _Application.ReadWrite.OwnedBy_
 - Choose _Add permissions_
 - Choose _Grant admin consent for [Tenant Name]_
-
-
-### Service Account
-
-- Navigate to Azure Active Directory
-- Choose _Users_ blade
-- Choose _New user_
-  - User name: [_Example: svc.aws_]
-  - Name: [_Example: Service Account (AWS)_]
-  - Password: _Let me create the password_
-    - Provide secure value
-- Choose _Create_
-- Navigate to new user
-- Choose _Assigned roles_
-- Choose _Add assignments_
-- Scroll down and Choose _Hybrid identity administrator_
-- Under _Settings_ choose _Active_
-- Choose _Assign_
 
 ### Enterprise Application
 
@@ -80,8 +62,7 @@ Gather the following properties for input into the PowerShell script
   - Application Name
   - Application Id
   - Client Secret
-  - Username
-  - Password
+
 
 > Note: When copying and pasting in Windows, choose the PowerShell icon, then Edit > Paste.
 
