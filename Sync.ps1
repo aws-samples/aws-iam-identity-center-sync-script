@@ -119,13 +119,7 @@ function New-GraphAccessToken() {
         [string]$ApplicationId,
  
         [Parameter(Mandatory = $true)]
-        [securestring]$ClientSecret,
- 
-        [Parameter(Mandatory = $true)]
-        [string]$Username,
- 
-        [Parameter(Mandatory = $true)]
-        [securestring]$Password
+        [securestring]$ClientSecret
     )
  
     begin {
@@ -139,12 +133,9 @@ function New-GraphAccessToken() {
             }
             Body    = @{
                 "resource"      = "https://graph.microsoft.com"
-                "grant_type"    = "password"
+                "grant_type"    = "client_credentials"
                 "client_id"     = "$applicationId"
                 "client_secret" = "$(ConvertFrom-SecureString -SecureString $clientSecret -AsPlainText)"
-                "username"      = "$username"
-                "password"      = "$(ConvertFrom-SecureString -SecureString $password -AsPlainText)"
-                "scope"         = "openid"
             }
         }
     }
@@ -238,18 +229,12 @@ function Initialization {
         $clientSecret = Read-Host -Prompt "Client Secret" -AsSecureString
         if ([string]::IsNullOrEmpty($clientSecret)) { Write-Error -Message "Client Secret cannot be blank."  -ErrorAction Stop }
 
-        $username = Read-Host -Prompt "Username"
-        if ([string]::IsNullOrEmpty($username)) { Write-Error -Message "Username cannot be blank."  -ErrorAction Stop }
-
-        $password = Read-Host -Prompt "Password" -AsSecureString
-        if ([string]::IsNullOrEmpty($password)) { Write-Error -Message "Password cannot be blank."  -ErrorAction Stop }
-        
         Clear-Host
         Write-Host "AWS Single Sign-On Integration - Sync Starting" -ForegroundColor Yellow
     }
 
     process {
-        $accessToken = New-GraphAccessToken -TenantId $tenantId -ApplicationId $applicationId -ClientSecret $clientSecret -Username $username -Password $password
+        $accessToken = New-GraphAccessToken -TenantId $tenantId -ApplicationId $applicationId -ClientSecret $clientSecret
         $servicePrincipalId = Get-GraphServicePrincipal -AccessToken $accessToken -DisplayName $displayName
         $jobId = Get-GraphSynchronizationJobId -AccessToken $accessToken -ServicePrincipalId $servicePrincipalId
         Start-GraphSynchronizationJob -AccessToken $accessToken -ServicePrincipalId $servicePrincipalId -JobId $jobId
