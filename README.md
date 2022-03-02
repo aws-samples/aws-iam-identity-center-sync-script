@@ -5,7 +5,7 @@ On Demand SCIM provisioning of Azure AD to AWS SSO with PowerShell
  - This repo is based on the steps outlined in this [article](https://aws.amazon.com/blogs/security/on-demand-scim-provisioning-of-azure-ad-to-aws-sso-with-powershell/) updated July 2021.
 
 ## March Update
-## There is an updated version of this solution that uses Azure Functions and Keyvault to store the secrets in this [article](https://medium.com/i-love-my-local-farmer-engineering-blog/charting-our-identity-journey-in-aws-part-2-e4a99e6b1de3)
+There is an updated version of this solution that uses Azure Functions and Keyvault to store the secrets in this [article](https://medium.com/i-love-my-local-farmer-engineering-blog/charting-our-identity-journey-in-aws-part-2-e4a99e6b1de3)
 
 ## Getting Started
 
