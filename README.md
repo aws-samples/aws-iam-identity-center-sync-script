@@ -11,7 +11,7 @@ There is an updated version of this solution that uses Azure Functions and Keyva
 
 ### Prerequisites
 
-Configure **AWS Single Sign-On** with the steps outlined in this [article](https://aws.amazon.com/blogs/aws/the-next-evolution-in-aws-single-sign-on/)
+Configure **AWS IAM Identity Center** with the steps outlined in this [article](https://aws.amazon.com/blogs/aws/the-next-evolution-in-aws-single-sign-on/)
 
 ### App Registration
 
