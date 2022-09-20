@@ -1,7 +1,7 @@
-## AWS-SSO-SYNC
+## AWS IAM Identity Center Sync Script
 
 ## Overview
-On Demand SCIM provisioning of Azure AD to AWS SSO with PowerShell
+On Demand SCIM provisioning of Azure AD to AWS IAM Identity Center with PowerShell
  - This repo is based on the steps outlined in this [article](https://aws.amazon.com/blogs/security/on-demand-scim-provisioning-of-azure-ad-to-aws-sso-with-powershell/) updated July 2021.
 
 ## March 2022 Update
