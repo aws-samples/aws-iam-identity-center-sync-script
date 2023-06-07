@@ -2,10 +2,14 @@
 
 ## Overview
 On Demand SCIM provisioning of Azure AD to AWS IAM Identity Center with PowerShell
- - This repo is based on the steps outlined in this [article](https://aws.amazon.com/blogs/security/on-demand-scim-provisioning-of-azure-ad-to-aws-sso-with-powershell/) updated July 2021.
+ - This repo is based on the steps outlined in this [article](https://aws.amazon.com/blogs/security/on-demand-scim-provisioning-of-azure-ad-to-aws-sso-with-powershell/) updated June 2023.
+
+## June 2023 Update
+Made minor updates to the Configure section for Graph API Permissions
+
 
 ## March 2022 Update
-There is an updated version of this solution that uses Azure Functions and Keyvault to store the secrets in this [article](https://medium.com/i-love-my-local-farmer-engineering-blog/charting-our-identity-journey-in-aws-part-2-e4a99e6b1de3)
+There is an updated version of this solution that uses Azure Functions and Keyvault to store the secrets in this [article](https://medium.com/i-love-my-local-farmer-engineering-blog/charting-our-identity-journey-in-aws-part-2-e4a99e6b1de3) and repo is [here](https://github.com/aws-samples/i-love-my-local-farmer/tree/main/IdentityJourney)
 
 ## Getting Started
 
@@ -40,6 +44,7 @@ Configure **AWS IAM Identity Center** with the steps outlined in this [article](
 - Scroll down to _Application_ and expand
 - Choose _Application.ReadWrite.OwnedBy_
 - Choose _Add permissions_
+- Choose _Synchronization.ReadWrite.OwnedBy_
 - Choose _Grant admin consent for [Tenant Name]_
 
 ### Enterprise Application
