@@ -43,7 +43,7 @@ Configure **AWS IAM Identity Center** with the steps outlined in this [article](
 - Choose _Application permissions_
 - Scroll down to _Application_ and expand
 - Choose _Application.ReadWrite.OwnedBy_
-- Choose _Synchronization.ReadWrite.OwnedBy_
+- Choose _Synchronization.ReadWrite.All_
 - Choose _Add permissions_
 - Choose _Grant admin consent for [Tenant Name]_
 
